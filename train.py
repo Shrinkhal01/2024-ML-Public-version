@@ -18,6 +18,8 @@ model = keras.Sequential([
     layers.Flatten(), # flatten the 3D output to 1D
     layers.Dense(num_classes, activation="softmax") 
 ])
+# each layer gives an output which is treated as input to th next layer
+# this is called FORWARD PROPOGATION
 
 model.summary()
 
